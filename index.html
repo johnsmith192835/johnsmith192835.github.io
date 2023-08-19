@@ -1,0 +1,17 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let queryString = window.location.search;
+			let params = new URLSearchParams(queryString);
+
+			let title = params.get('title');
+			let message = params.get('message');
+			let fakeMessage = params.get('fakeMessage');
+
+			document.write(fakeMessage + "<br/><strong>" + message + '</strong>');
+			document.title = title;
+		</script>
+	</body>
+</html>
